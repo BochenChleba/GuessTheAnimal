@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Guess The Animal</string>
+
+    <string name="menu_library">Animals Library</string>
+
+    <string name="game_fragment_btn_begin">Start</string>
+    <string name="game_fragment_inf0_tv_normal">What animal was that?</string>
+    <string name="game_fragment_inf0_tv_normal_landscape">What animal\nwas that?</string>
+    <string name="game_fragment_info_tv_correct">That was\u0020</string>
+    <string name="game_fragment_info_tv_correct_landscape">That was\u0020</string>
+    <string name="game_fragment_info_tv_wrong">No, that was not\u0020</string>
+    <string name="game_fragment_info_tv_wrong_landscape">No, that was not\u0020</string>
+
+    <string name="win_dialog_library">Animal\nLibrary</string>
+    <string name="win_dialog_again">Again</string>
+    <string name="win_dialog_title_poor">You can do better</string>
+    <string name="win_dialog_title_normal">Nice try</string>
+    <string name="win_dialog_title_good">Amazing !</string>
+    <string name="win_dialog_text">You had %1$d correct answers out of %2$d\n
+                                    It took you %3$s </string>
+
+    <string name="library_dialog_title">Animal Library</string>
+    <string name="library_dialog_ibtn_desc">Back</string>
+
+    <string name="image_desc_recycler_item">animal image</string>
+
+    <item name="TAG_POSITION" type="id"/>
+    <item name="TAG_ANIMAL" type="id"/>
+</resources>

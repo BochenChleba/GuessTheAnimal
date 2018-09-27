@@ -1,0 +1,48 @@
+<resources>
+    //Game Fragment
+    <dimen name="game_btn_play_size">280dp</dimen>
+    <dimen name="game_btn_play_margin_top">24dp</dimen>
+    <dimen name="game_btn_play_margin_left">48dp</dimen>
+    <dimen name="game_btn_play_margin_right">48dp</dimen>
+
+    <dimen name="game_tv_counter_margin_right">32dp</dimen>
+    <dimen name="game_tv_counter_margin_top">64dp</dimen>
+    <dimen name="game_tv_counter_textsize">52sp</dimen>
+
+    <dimen name="game_tv_time_margin_top">14dp</dimen>
+    <dimen name="game_tv_time_textsize">52sp</dimen>
+
+    <dimen name="game_tv_hint_margin_top">48dp</dimen>
+    <dimen name="game_tv_hint_margin_left">8dp</dimen>
+    <dimen name="game_tv_hint_margin_right">8dp</dimen>
+    <dimen name="game_tv_hint_textsize">48sp</dimen>
+
+    <dimen name="game_lay_constr_margin_top">34dp</dimen>
+    <dimen name="game_lay_constr_margin_left">16dp</dimen>
+    <dimen name="game_lay_constr_margin_right">16dp</dimen>
+    <dimen name="game_lay_constr_margin_bottom">16dp</dimen>
+
+    <dimen name="game_btn_answer_margin">8dp</dimen>
+    <dimen name="game_btn_answer_padding">12dp</dimen>
+
+    <dimen name="game_btn_start_padding">48dp</dimen>
+    <dimen name="game_btn_start_margin">20dp</dimen>
+    <dimen name="game_btn_start_textsize">56sp</dimen>
+
+    //Library Fragment
+    <dimen name="library_ibtn_return_padding">12dp</dimen>
+    <dimen name="library_ibtn_return_margin_left">8dp</dimen>
+
+    <dimen name="library_tv_title_padding">12dp</dimen>
+    <dimen name="library_tv_title_margin_left">8dp</dimen>
+    <dimen name="library_tv_title_textsize">32sp</dimen>
+
+    <dimen name="recycler_title_size">21sp</dimen>
+    <dimen name="recycler_text_size">14sp</dimen>
+    <dimen name="recycler_padding">10dp</dimen>
+
+    <dimen name="recycler_image_width">160dp</dimen>
+    <dimen name="recycler_image_height">100dp</dimen>
+    <dimen name="recycler_image_width_land">280dp</dimen>
+    <dimen name="recycler_image_height_land">175dp</dimen>
+</resources>

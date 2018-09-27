@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:background="@color/colorDialogBackground"
+    tools:context="com.bochenchleba.guesstheanimal.GameFragment"
+    >
+
+    <Button
+        android:id="@+id/btn_start"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/game_btn_start_padding"
+        android:layout_margin="@dimen/game_btn_start_margin"
+
+        android:text="@string/game_fragment_btn_begin"
+        android:textSize="@dimen/game_btn_start_textsize"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimaryText"
+        android:visibility="visible"
+        />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_main"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:alpha="0"
+        android:clickable="false">
+
+        <Button
+            android:id="@+id/button_play_sound"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginEnd="@dimen/game_btn_play_margin_left"
+            android:layout_marginStart="@dimen/game_btn_play_margin_left"
+            android:background="@drawable/play_sound_btn"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_hint"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/tv_hint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_hint" />
+
+        <TextView
+            android:id="@+id/tv_counter"
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:layout_marginEnd="@dimen/game_tv_counter_margin_right"
+
+            android:layout_marginStart="@dimen/game_tv_counter_margin_right"
+            android:text="1/5"
+            android:textSize="@dimen/game_tv_counter_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintStart_toEndOf="@+id/tv_hint"
+            app:layout_constraintTop_toTopOf="@+id/tv_hint" />
+
+        <TextView
+            android:id="@+id/tv_time"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:text="1:25"
+            android:textSize="@dimen/game_tv_time_textsize"
+
+            app:layout_constraintEnd_toEndOf="@+id/tv_counter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_counter" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="@dimen/game_tv_hint_margin_right"
+            android:layout_marginStart="@dimen/game_tv_hint_margin_right"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:minLines="2"
+            android:lines="2"
+            android:text="What animal\nwas that?"
+            android:ems="7"
+
+            android:textSize="@dimen/game_tv_hint_textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/btnsLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hint">
+
+            <ImageButton
+                android:id="@+id/button1"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_margin="@dimen/game_btn_answer_margin"
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/game_btn_answer_padding"
+                android:scaleType="fitCenter"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button2"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/game_btn_answer_margin"
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/game_btn_answer_padding"
+                android:scaleType="fitCenter"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button3"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/game_btn_answer_margin"
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/game_btn_answer_padding"
+                android:scaleType="fitCenter"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button4"
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/game_btn_answer_margin"
+
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/game_btn_answer_padding"
+                android:scaleType="fitCenter"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

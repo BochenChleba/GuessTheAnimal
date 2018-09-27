@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#bf360c</color>
+    <color name="colorAccent">#ffd740</color>
+
+    <color name="colorSecondary">#ff8f00</color>
+    <color name="colorCorrectly">#8BC34A</color>
+    <color name="colorWrong">#FF3D00</color>
+
+    <color name="colorDialogBackground">#D84315</color>
+    <color name="colorDialogText">#FFF59D</color>
+    <color name="colorDialogBtn">#AE250b</color>
+
+    <color name="colorPrimaryText">#EFEFEF</color>
+    <color name="colorWrongText">#FFCDD2</color>
+</resources>

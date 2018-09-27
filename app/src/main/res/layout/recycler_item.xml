@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/recycler_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_desc"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_title"
+        app:srcCompat="@drawable/lion" />
+
+    <TextView
+        android:id="@+id/recycler_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Lion"
+        android:textColor="@color/colorDialogText"
+        android:gravity="center"
+
+        android:textSize="@dimen/recycler_title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recycler_image"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recycler_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:minLines="7"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/recycler_text_size"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recycler_image"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_title" />
+</android.support.constraint.ConstraintLayout>
